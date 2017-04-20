@@ -1,1 +1,0 @@
-SELECT userid FROM [WhereEat].[Common].users

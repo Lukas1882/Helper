@@ -25,7 +25,7 @@ namespace SqlReportHelper
             Console.WriteLine("\n");
             // Export the script sql data into excel.
             ExcelHelper.ExportFiles(scripts);
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }

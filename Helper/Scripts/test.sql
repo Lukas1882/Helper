@@ -1,1 +1,0 @@
-SELECT * FROM [WhereEat].[Common].users

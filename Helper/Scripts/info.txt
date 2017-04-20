@@ -1,0 +1,1 @@
+﻿this is the folder to store the sql scripts. make sure your files are in sql extension.
