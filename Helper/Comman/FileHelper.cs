@@ -40,6 +40,9 @@ namespace SqlReportHelper.Comman
                 Directory.CreateDirectory(AppModel.scriptFolder);
             foreach (string filePath in Directory.GetFiles(AppModel.scriptFolder))
             {
+                string dd = Path.GetExtension(filePath).ToLower();
+                if (Path.GetExtension(filePath).ToLower() != ".sql")
+                    continue;
                 string fileName = Path.GetFileNameWithoutExtension(filePath);
                 scripts.Add(new Script(fileName, File.ReadAllText(filePath)));
             }

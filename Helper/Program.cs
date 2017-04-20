@@ -8,6 +8,7 @@ using SqlReportHelper.Models;
 using SqlReportHelper.Models;
 using System.Collections.Generic;
 using SqlReportHelper.Common;
+using System.Threading;
 
 namespace SqlReportHelper
 {
@@ -25,7 +26,20 @@ namespace SqlReportHelper
             Console.WriteLine("\n");
             // Export the script sql data into excel.
             ExcelHelper.ExportFiles(scripts);
-            //Console.ReadKey();
+            Play();
+
+        }
+
+        public static void Play()
+        {
+            Console.WriteLine("Announce Program");
+            Console.WriteLine("Close Program Announcement");
+            Timer t = new Timer(timerC, null, 9000, 9000);
+        }
+
+        private static void timerC(object state)
+        {
+            Environment.Exit(0);
         }
     }
 }
